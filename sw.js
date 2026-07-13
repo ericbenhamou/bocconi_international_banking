@@ -1,5 +1,5 @@
-const CACHE = "banking-desk-v5";
-const ASSETS = ["./", "./index.html", "./styles.css", "./questions.js", "./app.js", "./manifest.webmanifest"];
+const CACHE = "banking-desk-v6";
+const ASSETS = ["./", "./index.html", "./styles.css?v=6", "./questions.js?v=6", "./app.js?v=6", "./recovery.js?v=6", "./manifest.webmanifest"];
 self.addEventListener("install", event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS))));
 self.addEventListener("activate", event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))));
 self.addEventListener("fetch", event => {
