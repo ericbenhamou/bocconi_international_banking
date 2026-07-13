@@ -1,4 +1,4 @@
-const CACHE = "banking-desk-v4";
+const CACHE = "banking-desk-v5";
 const ASSETS = ["./", "./index.html", "./styles.css", "./questions.js", "./app.js", "./manifest.webmanifest"];
 self.addEventListener("install", event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS))));
 self.addEventListener("activate", event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))));
@@ -10,3 +10,4 @@ self.addEventListener("fetch", event => {
     return response;
   }).catch(() => caches.match("./index.html"))));
 });
+
