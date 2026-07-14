@@ -1,4 +1,4 @@
-const CACHE = "bocconi-study-desk-v8";
+const CACHE = "bocconi-study-desk-v9";
 const ASSETS = ["./", "./index.html", "./styles.css?v=8", "./questions.js?v=8", "./strategy_questions.js?v=8", "./app.js?v=8", "./recovery.js?v=8", "./manifest.webmanifest"];
 self.addEventListener("install", event => event.waitUntil(
   caches.open(CACHE)
