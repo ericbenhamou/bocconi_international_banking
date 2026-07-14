@@ -7,12 +7,3 @@
   "theme_color": "#173f3a",
   "description": "Persistent six-subject Bocconi quiz and review companion"
 }
-{
-  "name": "Banking Desk — International Banking Study",
-  "short_name": "Banking Desk",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#f5f1e8",
-  "theme_color": "#173f3a",
-  "description": "Persistent International Banking quiz and review companion"
-}
